@@ -1,0 +1,17 @@
+Commands to run - 
+
+hw3 keygen -p=pphrase -t=period
+hw3 crypt -k=keyfile [file]
+hw3 invkey keyfile
+hw3 histo -t=period -i=which [file]
+hw3 solve -l=max_t file
+
+Files- 
+main.c       : contains main program.
+functions.h  : contains function declarations.
+keygen.c     : The output is a key file with 'period' number of lines.
+crypt.c      : The output is a text file encrypted with keys obtained from key file.
+invkey.c        : The output is an inverse permutation of keys in keyfile.
+histo.c      : The output is a histogram indicating the frequencies of characters in the ciphertext.
+solve.c      : Output indicates the period of ciphertext deciphered through i) Kaisiki Method ii) Average Index of Coincidence iii)Auto-correlation Method
+Makefile    
